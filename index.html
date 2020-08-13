@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>김도연 포트폴리오</title>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+        <link href='//fonts.googleapis.com/css?family=Lato:900,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/animation.css">
         <link rel="stylesheet" href="css/fullpage.min.css">
         <script src="js/jquery-1.12.0.min.js"></script>
         <script src="js/easings.js"></script>
@@ -30,8 +32,8 @@
 			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li><!--첫번째 버튼활성 : 초기상태-->
 			<li data-menuanchor="secondPage"><a href="#secondPage">DO YEON</a></li>
 			<li data-menuanchor="thirdPage"><a href="#thirdPage">SKILL</a></li>
-			<li data-menuanchor="fourthPage"><a href="#fourthPage">PORTFOLIO</a></li>
-			<li data-menuanchor="fifthPage"><a href="#fifthPage">CONTACT</a></li>
+			<li><a href="#fourthPage">PORTFOLIO</a></li>
+			<li><a href="#fifthPage">CONTACT</a></li>
 		</ul>
         <div id="fullpage">
             <div class="section" id="section01">
@@ -127,18 +129,97 @@
                     <p>SCROLL</p>
                 </div>-->
             </div>
-            <div class="section" id="section04">박스4</div>
+            <div class="section" id="section04">
+                <div class="portfolio_wrap">
+                    <div class="portfolio">
+                       <div class="portfolio_title">
+                           <p></p>
+                           <a href="portfolio.pdf" target="_blank">
+                               포트폴리오 상세보기
+                               <img src="img/common/click.png" alt="포트폴리오 상세보기">
+                            </a>
+                        </div>
+                        <ul>
+                            <li class="site_box">
+                                <a href="#">
+                                    <div class="site_img" style="background-image: url(img/site/thehome_pc.png)"></div>
+                                    <div class="site_info">
+                                        <p class="site_title">
+                                            리브랜딩 프로젝트 '더홈(PC)'<br>
+                                            <span class="site_kind">
+                                            - 적응형 홈페이지
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="site_box">
+                                <a href="#">
+                                    <div class="site_img" style="background-image: url(img/site/thehome_mobile.png)"></div>
+                                    <div class="site_info">
+                                        <p class="site_title">
+                                            리브랜딩 프로젝트 '더홈(Mobile)'<br>
+                                            <span class="site_kind">
+                                            - 적응형 홈페이지
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="site_box">
+                                <a href="#">
+                                    <div class="site_img" style="background-image: url(img/site/thedp.png)"></div>
+                                    <div class="site_info">
+                                        <p class="site_title">
+                                            리브랜딩 프로젝트 'DIPO'<br>
+                                            <span class="site_kind">
+                                            - 반응형 홈페이지
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="site_box">
+                                <a href="#">
+                                    <div class="site_img" style="background-image: url(img/site/thegalaxy.png)"></div>
+                                    <div class="site_info">
+                                        <p class="site_title">
+                                            풀페이지 프로젝트 '갤럭시'<br>
+                                            <span class="site_kind">
+                                            - 적응형 홈페이지
+                                            </span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="site_box">
+                                <a href="#" class="return">
+                                    <div class="wrapper">
+                                        <svg class="hourglass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 206" preserveAspectRatio="none">
+                                            <path class="middle" d="M120 0H0v206h120V0zM77.1 133.2C87.5 140.9 92 145 92 152.6V178H28v-25.4c0-7.6 4.5-11.7 14.9-19.4 6-4.5 13-9.6 17.1-17 4.1 7.4 11.1 12.6 17.1 17zM60 89.7c-4.1-7.3-11.1-12.5-17.1-17C32.5 65.1 28 61 28 53.4V28h64v25.4c0 7.6-4.5 11.7-14.9 19.4-6 4.4-13 9.6-17.1 16.9z"/>
+                                            <path class="outer" d="M93.7 95.3c10.5-7.7 26.3-19.4 26.3-41.9V0H0v53.4c0 22.5 15.8 34.2 26.3 41.9 3 2.2 7.9 5.8 9 7.7-1.1 1.9-6 5.5-9 7.7C15.8 118.4 0 130.1 0 152.6V206h120v-53.4c0-22.5-15.8-34.2-26.3-41.9-3-2.2-7.9-5.8-9-7.7 1.1-2 6-5.5 9-7.7zM70.6 103c0 18 35.4 21.8 35.4 49.6V192H14v-39.4c0-27.9 35.4-31.6 35.4-49.6S14 81.2 14 53.4V14h92v39.4C106 81.2 70.6 85 70.6 103z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="loading_title">
+                                        준비중 입니다.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="section" id="section05">
             	<div class="wrap">
             		<div class="contact">
             			<p class="contact_title">
-            				회사에 가장 필요한 신입사원은?<br>
+            				회사에 가장 필요한 사원은?<br>
             				- <span class="contact_color">신나게</span> 일하는 사람입니다.
             			</p>
             		</div>
             		<div class="contact_link">
             			<ul>
-            				<li><a href="#"><img src="img/common/f_email.png" class="email" alt=""></a></li>
+            				<li><a href="mailto:dorikoo@kakao.com?Subject=Hello%20again"><img src="img/common/f_email.png" class="email" alt=""></a></li>
             				<li><a href="#"><img src="img/common/f_profile.png" class="profile" alt=""></a></li>
             			</ul>
             		</div>

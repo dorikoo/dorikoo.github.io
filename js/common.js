@@ -39,8 +39,18 @@ $(document).ready(function(){
 		else if(value2=="profile_h"){
 			$(this).html('<img src="img/common/f_profile.png" class="profile" alt="">');
 		}
-		
 	});
+    
+    $('.return').click(function(){
+        alert("준비중 입니다.");
+        return false;
+    });
+    
+    $('.site_box').hover(function(){
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active');
+    });
 });
 
 

@@ -1,0 +1,100 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  font-size: 1.6rem;
+  background: #fff;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+
+.hourglass {
+  display: block;
+  background: #fff;
+  margin: 0 auto;
+  width: 2em;
+  height: 4em;
+  -webkit-animation: hourglass 1s linear infinite;
+          animation: hourglass 1s linear infinite;
+}
+
+.outer {
+  fill: #ec6b6b;
+}
+
+.middle {
+  fill: #fff;
+}
+
+@-webkit-keyframes hourglass {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #ec6b6b 0 0em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -4em 0 0;
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #ec6b6b 0 -2em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -2em 0 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    box-shadow: inset #ec6b6b 0 -2em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -2em 0 0;
+  }
+}
+
+@keyframes hourglass {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #ec6b6b 0 0em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -4em 0 0;
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    box-shadow: inset #ec6b6b 0 -2em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -2em 0 0;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    box-shadow: inset #ec6b6b 0 -2em 0 0, inset #fff 0 -2em 0 0, inset #ec6b6b 0 -2em 0 0;
+  }
+}
