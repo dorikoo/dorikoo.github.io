@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>풀페이지 플러그인</title>
+        <!--1. css소스연결-->
+        <link rel="stylesheet" href="css/fullpage.min.css">
+        <style>
+            /* header footer */
+            header{ width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 6000; background-color: lightblue; }
+            footer{ width: 100%; height: 100px; position: fixed; bottom: 0; left: 0; z-index: 6001; background-color: gray; opacity: 0;  }
+            
+            footer.active{ opacity: 1; transition: 0.6s; }
+            
+            
+            
+            /* 메뉴버튼 꾸미기 */
+            #myMenu{ position: fixed; top: 50%; right: 10px; z-index: 5000; }
+            #myMenu a{ color: #fff; }
+            #myMenu li.active a{ color: yellow; }
+            
+            
+            /* 배경이미지는 CSS로 처리 */
+            .section{ 
+                background-size: cover; background-position: center; 
+                
+                /* 배경이미지 고정 */
+                background-attachment: fixed;
+                
+                /* 글자 설정 */
+                color: #fff; font-size: 100px; text-align: center;
+            }
+            
+            #section01{ background-image: url(images/img01.jpg); }
+            #section02{ background-image: url(images/img02.jpg); }
+            #section03{ background-image: url(images/img03.jpg); }
+            #section04{ background-image: url(images/img04.jpg); }
+            #section05{ background-image: url(images/img05.jpg); }
+        </style>
+        <!--2. js플러그인연결-->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/easings.js"></script>
+        <script src="js/fullpage.extensions.min.js"></script>
+        <script src="js/fullpage.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                //4. 실행메서드 사용
+                $('#fullpage').fullpage({
+                    //options here
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', //상업적용도가 아닌 오픈소스 라이센스코드(구입해서 사용하세요)
+                    css3: false, //크롬에서 css3 transform처리가 안되서 배경이미지 고정처리가 안되서 반드시 작성
+                    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'], //앵커명 작성 : a태그 href에 적은 값
+	                menu: '#myMenu', //메뉴버튼의 선택자를 작성
+                    easing: 'easeOutBack', //이징옵션 변경
+                    afterLoad: function(origin, destination, direction){
+                        //화면을 읽고 난 후에 일어날일을 담는 콜백함수
+                        
+                        //도착한 구역의 인덱스번호가 4라면 footer가 나타남
+                        if(destination.index == 4){
+                            $('footer').addClass('active');
+                        }
+                    },
+                    onLeave : function(origin, destination, direction){
+                        //화면에서 떠날때
+                        $('footer').removeClass('active'); //클래스 제거
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header>헤더</header>
+        <ul id="myMenu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li><!--첫번째 버튼활성 : 초기상태-->
+            <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+            <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+            <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+            <li data-menuanchor="fifthPage"><a href="#fifthPage">Fifth section</a></li>
+        </ul>
+        <div id="fullpage">
+            <div class="section" id="section01">박스1</div>
+            <div class="section" id="section02">박스2</div>
+            <div class="section" id="section03">박스3</div>
+            <div class="section" id="section04">박스4</div>
+            <div class="section" id="section05">박스5</div>
+        </div>
+        <footer>푸터</footer>
+    </body>
+</html>
+
+
+
+
+
+
