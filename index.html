@@ -16,16 +16,23 @@
     </head>
     <body>
         <p class="size"></p>
-        <ul id="menu_bar">
-            <a href="#"><img src="img/common/menu_bar.png" alt="메뉴"><span class="menu">MENU</span></a>
-            <ul>
-                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li><!--첫번째 버튼활성 : 초기상태-->
-                <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-                <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-                <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-                <li data-menuanchor="fifthPage"><a href="#fifthPage">Fifth section</a></li>
-            </ul>
-        </ul>
+        <div class="menu_bg"></div>
+        <div class="menu_bg_back"></div>
+        <div class="menu_bar">
+            <a href="#">
+                <span class="line01"></span>
+                <span class="line02"></span>
+                <span class="line03"></span>
+                <span class="menu">MENU</span>
+            </a>
+		</div>
+		<ul class="sub_menu">
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li><!--첫번째 버튼활성 : 초기상태-->
+			<li data-menuanchor="secondPage"><a href="#secondPage">DO YEON</a></li>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">SKILL</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">PORTFOLIO</a></li>
+			<li data-menuanchor="fifthPage"><a href="#fifthPage">CONTACT</a></li>
+		</ul>
         <div id="fullpage">
             <div class="section" id="section01">
                <div class="wrap">
@@ -69,12 +76,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="scroll">
+                <!--<div class="scroll">
                     <span class="arrow">
                         <img src="img/common/scroll_43.png" alt="스크롤이미지">
                     </span>
                     <p>SCROLL</p>
-                </div>
+                </div>-->
             </div>
             <div class="section" id="section03">
                 <div class="wrap">
@@ -106,23 +113,37 @@
                                         Photoshop, illustrator , Xd 를 사용할 수 있습니다. 
                                      </p>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <p class="last">- 맞습니다.</p>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                     </div> 
                 </div>
-                <div class="scroll">
+                <!--<div class="scroll">
                     <span class="arrow">
                         <img src="img/common/scroll_43.png" alt="스크롤이미지">
                     </span>
                     <p>SCROLL</p>
-                </div>
+                </div>-->
             </div>
             <div class="section" id="section04">박스4</div>
-            <div class="section" id="section05">박스5</div>
+            <div class="section" id="section05">
+            	<div class="wrap">
+            		<div class="contact">
+            			<p class="contact_title">
+            				회사에 가장 필요한 신입사원은?<br>
+            				- <span class="contact_color">신나게</span> 일하는 사람입니다.
+            			</p>
+            		</div>
+            		<div class="contact_link">
+            			<ul>
+            				<li><a href="#"><img src="img/common/f_email.png" class="email" alt=""></a></li>
+            				<li><a href="#"><img src="img/common/f_profile.png" class="profile" alt=""></a></li>
+            			</ul>
+            		</div>
+            	</div>
+            </div>
         </div>
-        <footer>푸터</footer>
     </body>
 </html>
