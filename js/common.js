@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('#fullpage').fullpage({
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', 
         css3: false, 
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage'], 
+        anchors: ['home', 'doyeon', 'skill', 'postfolio', 'contact'], 
         menu: '#myMenu', 
         easing: 'easeOutBack', 
         afterLoad: function(origin, destination, direction){
