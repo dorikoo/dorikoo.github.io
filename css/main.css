@@ -200,8 +200,8 @@
 /* 타블릿(소) */
 @media all and (max-width:669px){
     
-    #menu_bar{ width: 30px; top: 20px; right: 20px; z-index: 5000; }
-    #menu_bar a span{ display: none;}
+    .menu_bar{ width: 30px; top: 20px; right: 20px; z-index: 5000; }
+    .menu_bar a span.menu{ display: none;}
    
     .wrap{max-width: 400px;}
     
