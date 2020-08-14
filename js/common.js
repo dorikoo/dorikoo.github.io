@@ -46,6 +46,9 @@ $(document).ready(function(){
 	
 	$('.menu_bar a').click(function(){
 		$('.menu_bar').toggleClass('active');
+		$('.sub_menu').toggleClass('active');
+		$('.menu_bg').toggleClass('active');
+		$('.menu_bg_back').toggleClass('active');
 	});
 });
 $(document).ready(function(){
