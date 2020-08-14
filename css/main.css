@@ -36,25 +36,25 @@
 
 /*======section01======*/
 #section01 .wrap .first_page{position: relative;}
-#section01 .wrap p{text-align: center;font-weight: 700;color: #2d2d2d;position: relative;z-index: 2;left: 50%;transform: translateX(-50%);}
+#section01 .wrap ul li{text-align: center;font-weight: 700;color: #2d2d2d;position: relative;z-index: 2;left: 50%;transform: translateX(-50%);}
 
 /*타이핑 이벤트*/
-p.typing-txt{display: none;}
-.typing {  
-/*    position: absolute;*/ 
-      display: inline-block; 
-      animation-name: cursor; 
-      animation-duration: 0.3s; 
-      animation-iteration-count: infinite; 
-    } 
-    @keyframes cursor{ 
-      0%{border-right: 1px solid #fff} 
-      50%{border-right: 1px solid #000} 
-      100%{border-right: 1px solid #fff} 
-    }
+.typing-txt{display: none;}
+ul{list-style:none;}
+.typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
 
-#section01 .wrap p span{text-align: center;font-weight: 700;color: #ec6b6b;}
-#section01 .wrap .circle_box{animation: fadeIn 8s;}
+#section01 .wrap ul li span{text-align: center;font-weight: 700;color: #ec6b6b;}
+#section01 .wrap .circle_box{animation: fadeIn 4s;}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -128,8 +128,8 @@ p.typing-txt{display: none;}
 /* pc 웹 */
 @media all and (min-width:1180px){
     .wrap{max-width: 900px;}
-    #section01 .wrap p{font-size: 83px;letter-spacing: 2px;line-height: 110px;}
-    #section01 .wrap p span{font-size: 83px;}
+    #section01 .wrap ul li{font-size: 83px;letter-spacing: 2px;line-height: 110px;}
+    #section01 .wrap ul li span{font-size: 83px;}
     #section01 .wrap .circle{width:125px;height: 125px;border-radius: 125px;top:39%;left: 46%;}
     #section01 .wrap .circle2{width:140px;height: 140px;border-radius: 140px;top:50%;left: 53%;}
     
@@ -145,8 +145,8 @@ p.typing-txt{display: none;}
     
     .wrap{max-width: 780px;}
     
-    #section01 .wrap p{font-size: 75px;line-height: 95px;}
-    #section01 .wrap p span{font-size: 76px;}
+    #section01 .wrap ul li{font-size: 75px;line-height: 95px;}
+    #section01 .wrap ul li span{font-size: 76px;}
     #section01 .wrap .circle{width:100px;height: 100px;border-radius: 100px;top:43%;left: 46%;}
     #section01 .wrap .circle2{width:115px;height: 115px;border-radius: 120px;top:50%;left: 53%;}
     
@@ -185,8 +185,8 @@ p.typing-txt{display: none;}
     
     .wrap{max-width: 635px;}
     
-    #section01 .wrap p{font-size: 65px;line-height: 85px;}
-    #section01 .wrap p span{font-size: 65px;}
+    #section01 .wrap ul li{font-size: 65px;line-height: 85px;}
+    #section01 .wrap ul li span{font-size: 65px;}
     #section01 .wrap .circle{width:90px;height: 90px;border-radius: 90px;top:43%;left: 45%;}
     #section01 .wrap .circle2{width:105px;height: 105px;border-radius: 110px;top:50%;left: 53%;}
     
@@ -228,8 +228,8 @@ p.typing-txt{display: none;}
     .menu_bar{ width: 30px; top: 20px; right: 20px; z-index: 5000; }
     .menu_bar a span.menu{ display: none;}
     
-    #section01 .wrap p{font-size: 55px;line-height: 75px;}
-    #section01 .wrap p span{font-size: 55px;}
+    #section01 .wrap ul li{font-size: 55px;line-height: 75px;}
+    #section01 .wrap ul li span{font-size: 55px;}
     #section01 .wrap .circle{width:80px;height: 80px;border-radius: 80px;top:43%;left: 46%;}
     #section01 .wrap .circle2{width:95px;height: 95px;border-radius: 95px;top:52%;left: 51%;}
     
@@ -264,8 +264,8 @@ p.typing-txt{display: none;}
     
     .wrap{max-width: 440px;}
     
-    #section01 .wrap p{font-size: 45px;line-height: 65px;}
-    #section01 .wrap p span{font-size: 45px;}
+    #section01 .wrap ul li{font-size: 45px;line-height: 65px;}
+    #section01 .wrap ul li span{font-size: 45px;}
     #section01 .wrap .circle{width:70px;height: 70px;border-radius: 70px;top:43%;left: 46%;}
     #section01 .wrap .circle2{width:85px;height: 85px;border-radius: 85px;top:52%;left: 51%;}
     
@@ -303,8 +303,8 @@ p.typing-txt{display: none;}
     
     
     
-    #section01 .wrap p{font-size: 40px;line-height: 60px;}
-    #section01 .wrap p span{font-size: 40px;}
+    #section01 .wrap ul li{font-size: 40px;line-height: 60px;}
+    #section01 .wrap ul li span{font-size: 40px;}
     #section01 .wrap .circle{width:55px;height: 55px;border-radius: 55px;top:45%;left: 46%;}
     #section01 .wrap .circle2{width:65px;height: 65px;border-radius: 65px;top:55%;left: 53%;}
     
@@ -342,8 +342,8 @@ p.typing-txt{display: none;}
     
     #menu_bar{ left: 10px;}
     
-    #section01 .wrap p{font-size: 35px;line-height: 55px;}
-    #section01 .wrap p span{font-size: 35px;}
+    #section01 .wrap ul li{font-size: 35px;line-height: 55px;}
+    #section01 .wrap ul li span{font-size: 35px;}
     #section01 .wrap .circle{width:50px;height: 50px;border-radius: 50px;top:45%;left: 46%;}
     #section01 .wrap .circle2{width:60px;height: 60px;border-radius: 65px;top:55%;left: 53%;}
     
@@ -387,8 +387,8 @@ p.typing-txt{display: none;}
     .wrap{max-width: 280px;}
     .scroll{bottom: 0px;}
 	
-    #section01 .wrap p{font-size: 30px;line-height: 50px;}
-    #section01 .wrap p span{font-size: 30px;}
+    #section01 .wrap ul li{font-size: 30px;line-height: 50px;}
+    #section01 .wrap ul li span{font-size: 30px;}
     #section01 .wrap .circle{width:42px;height: 42px;border-radius: 42px;top:45%;left: 46%;}
     #section01 .wrap .circle2{width:50px;height: 50px;border-radius: 50px;top:55%;left: 53%;}
     
@@ -420,8 +420,8 @@ p.typing-txt{display: none;}
     
     .wrap{max-width: 250px;}
     
-	#section01 .wrap p{font-size: 25px;line-height: 45px;}
-    #section01 .wrap p span{font-size: 25px;}
+	#section01 .wrap ul li{font-size: 25px;line-height: 45px;}
+    #section01 .wrap ul li span{font-size: 25px;}
     #section01 .wrap .circle{width:32px;height: 32px;border-radius: 35px;top:46%;left: 46%;}
     #section01 .wrap .circle2{width:40px;height: 40px;border-radius: 40px;top:55%;left: 53%;}
     
