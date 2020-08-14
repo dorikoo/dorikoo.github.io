@@ -36,8 +36,37 @@
 
 /*======section01======*/
 #section01 .wrap .first_page{position: relative;}
-#section01 .wrap p{text-align: center;font-weight: 700;color: #2d2d2d;position: relative;z-index: 2;}
+#section01 .wrap p{text-align: center;font-weight: 700;color: #2d2d2d;position: relative;z-index: 2;left: 50%;transform: translateX(-50%);}
+
+/*타이핑 이벤트*/
+p.typing-txt{display: none;}
+.typing {  
+/*    position: absolute;*/ 
+      display: inline-block; 
+      animation-name: cursor; 
+      animation-duration: 0.3s; 
+      animation-iteration-count: infinite; 
+    } 
+    @keyframes cursor{ 
+      0%{border-right: 1px solid #fff} 
+      50%{border-right: 1px solid #000} 
+      100%{border-right: 1px solid #fff} 
+    }
+
 #section01 .wrap p span{text-align: center;font-weight: 700;color: #ec6b6b;}
+#section01 .wrap .circle_box{animation: fadeIn 8s;}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#section01 .wrap .circle_box:hover{opacity: 1;}
 #section01 .wrap .circle{background-color: #f3f2f3;position: absolute;z-index: 1;}
 #section01 .wrap .circle2{background-color: #f3f2f3;position: absolute;z-index: 1;}
 
@@ -86,10 +115,12 @@
 /*======section05======*/
 #section05 .wrap .contact p.contact_title{font-size: 35px;font-weight: 800;line-height: 50px;text-align: center;}
 #section05 .wrap .contact span.contact_color{font-size: 35px;font-weight: 800;line-height: 50px;color:#ec6b6b;} 
-#section05 .wrap .contact_link ul{width: 350px;margin: 50px auto 0;}
+#section05 .wrap .contact_link ul{width: 270px;margin: 30px auto 0;}
 #section05 .wrap .contact_link ul::after{content:'';display:block;clear:both;}
 #section05 .wrap .contact_link li{float: left;}
-#section05 .wrap .contact_link li:nth-child(1){margin-right: 100px;}
+#section05 .wrap .contact_link li:nth-child(1){margin-right: 70px;}
+#section05 .wrap .contact_link li i{font-size: 100px;}
+#section05 .wrap .contact_link li:hover i{color: #ec6b6b}
 
 
 
@@ -97,8 +128,8 @@
 /* pc 웹 */
 @media all and (min-width:1180px){
     .wrap{max-width: 900px;}
-    #section01 .wrap p{font-size: 90px;letter-spacing: 2px;line-height: 110px;}
-    #section01 .wrap p span{font-size: 90px;}
+    #section01 .wrap p{font-size: 83px;letter-spacing: 2px;line-height: 110px;}
+    #section01 .wrap p span{font-size: 83px;}
     #section01 .wrap .circle{width:125px;height: 125px;border-radius: 125px;top:39%;left: 46%;}
     #section01 .wrap .circle2{width:140px;height: 140px;border-radius: 140px;top:50%;left: 53%;}
     
@@ -255,9 +286,9 @@
 	/*======section05======*/
 	#section05 .wrap .contact p.contact_title{font-size: 30px;line-height: 45px}
 	#section05 .wrap .contact span.contact_color{font-size: 30px;} 
-	#section05 .wrap .contact_link ul{margin-top: 40px;}
-	#section05 .wrap .contact_link li img{max-height: 100px}
+	#section05 .wrap .contact_link ul{width: 280px;margin-top: 20px;}
 	#section05 .wrap .contact_link li:nth-child(1){margin-right: 80px;}
+#section05 .wrap .contact_link li i{font-size: 100px;}
 
 }
 /*===============================================================================*/
@@ -295,11 +326,11 @@
     #section04 .portfolio_wrap{width: 450px;}
 
 	/*======section05======*/
-	#section05 .wrap .contact p.contact_title{font-size: 25px;line-height: 40px}
-	#section05 .wrap .contact span.contact_color{font-size: 25px;} 
-	#section05 .wrap .contact_link ul{width: 200px; margin-top: 30px;}
-	#section05 .wrap .contact_link li img{max-height: 75px}
-	#section05 .wrap .contact_link li:nth-child(1){margin-right: 60px;}
+	#section05 .wrap .contact p.contact_title{font-size: 30px;line-height: 45px}
+	#section05 .wrap .contact span.contact_color{font-size: 30px;} 
+	#section05 .wrap .contact_link ul{width: 280px;margin-top: 20px;}
+	#section05 .wrap .contact_link li:nth-child(1){margin-right: 80px;}
+    #section05 .wrap .contact_link li i{font-size: 100px;}
 }
 /*===============================================================================*/
 
@@ -340,6 +371,13 @@
     #section04 .portfolio .site_box{height: 100px;}
     #section04 .portfolio .site_img{height: 150px;}
     #section04 .portfolio .site_title{padding-top: 28px;}
+	
+	/*======section05======*/
+	#section05 .wrap .contact p.contact_title{font-size: 27px;line-height: 45px}
+	#section05 .wrap .contact span.contact_color{font-size: 27px;} 
+	#section05 .wrap .contact_link ul{width: 260px;margin-top: 10px;}
+	#section05 .wrap .contact_link li:nth-child(1){margin-right: 60px;}
+    #section05 .wrap .contact_link li i{font-size: 100px;}
 }
 
 /*===============================================================================*/
@@ -370,11 +408,11 @@
     #section04 .portfolio_wrap{width: 280px;}
 	
 	/*======section05======*/
-	#section05 .wrap .contact p.contact_title{font-size: 20px;line-height: 30px}
-	#section05 .wrap .contact span.contact_color{font-size: 20px;} 
-	#section05 .wrap .contact_link ul{width: 180px; margin-top: 30px;}
-	#section05 .wrap .contact_link li img{max-height: 70px}
-	#section05 .wrap .contact_link li:nth-child(1){margin-right: 50px;}
+	#section05 .wrap .contact p.contact_title{font-size: 24px;line-height: 35px}
+	#section05 .wrap .contact span.contact_color{font-size: 24px;} 
+	#section05 .wrap .contact_link ul{width: 220px;margin-top: 0px;}
+	#section05 .wrap .contact_link li:nth-child(1){margin-right: 40px;}
+    #section05 .wrap .contact_link li i{font-size: 90px;}
 }
 
 /* 갤럭시 폴드 */
@@ -391,9 +429,9 @@
     #section04 .portfolio .site_title{padding-top: 30px;}
 	
 	/*======section05======*/
-	#section05 .wrap .contact p.contact_title{font-size: 18px;line-height: 20px}
-	#section05 .wrap .contact span.contact_color{font-size: 18px;} 
-	#section05 .wrap .contact_link ul{width: 170px; margin-top: 10px;}
-	#section05 .wrap .contact_link li img{max-height: 70px}
-	#section05 .wrap .contact_link li:nth-child(1){margin-right: 40px;}
+	#section05 .wrap .contact p.contact_title{font-size: 20px;line-height: 30px}
+	#section05 .wrap .contact span.contact_color{font-size: 20px;} 
+	#section05 .wrap .contact_link ul{width: 190px;margin-top: 0px;}
+	#section05 .wrap .contact_link li:nth-child(1){margin-right: 30px;}
+    #section05 .wrap .contact_link li i{font-size: 80px;}
 }
