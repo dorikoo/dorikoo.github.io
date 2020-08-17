@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    function scrollDisable(){
+        $('html, body').addClass('hidden');
+    }
+    function scrollAble(){
+        $('html, body').removeClass('hidden');
+    }
+});
+$(document).ready(function(){
 	var typingBool = false; 
 	var typingIdx=0; 
 	var liIndex = 0;
@@ -45,18 +53,37 @@ $(document).ready(function(){
 	}    
 	
 	$('.menu_bar a').click(function(){
-		$('.menu_bar').toggleClass('active');
-		$('.sub_menu').toggleClass('active');
-		$('.menu_bg').toggleClass('active');
-		$('.menu_bg_back').toggleClass('active');
-	});
+        if($('.menu_bar').attr('class') == 'menu_bar active'){remove();}
+        else{active();}
+    })
+    $('.sub_menu a').click(function(){remove();});
+    $('.menu_bg_back').click(function(){remove();});
 });
+function active(){
+    $('.menu_bar').addClass('active');
+    $('.sub_menu').addClass('active');
+    $('.menu_bg').addClass('active');
+    $('.menu_bg_back').addClass('active');
+
+    $('body').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+        e.stopPropagation(); 
+        return false;
+    });
+}
+function remove(){
+    $('.menu_bar').removeClass('active');
+    $('.sub_menu').removeClass('active');
+    $('.menu_bg').removeClass('active');
+    $('.menu_bg_back').removeClass('active');
+    $('body').off('scroll touchmove mousewheel');
+}
 $(document).ready(function(){
 	
     $('#fullpage').fullpage({
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', 
         css3: false, 
-        anchors: ['home', 'doyeon', 'skill', 'postfolio', 'contact'], 
+        anchors: ['home', 'doyeon', 'skill', 'portfolio', 'contact'], 
         menu: '#myMenu', 
         easing: 'easeOutBack', 
         afterLoad: function(origin, destination, direction){
@@ -83,5 +110,5 @@ $(document).ready(function(){
 
 
 $( window ).resize(function() {
-    $('.size').text(window.innerWidth);
+    //$('.size').text(window.innerWidth);
 });
