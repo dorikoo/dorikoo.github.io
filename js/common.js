@@ -96,7 +96,7 @@ $(document).ready(function(){
         }
     });
     
-    $('.return, .profile_link').click(function(){
+    $('.return').click(function(){
         alert("준비 중 입니다.");
         return false;
     });
