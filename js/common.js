@@ -110,5 +110,5 @@ $(document).ready(function(){
 
 
 $( window ).resize(function() {
-    //$('.size').text(window.innerWidth);
+    $('.size').text(window.innerWidth);
 });
