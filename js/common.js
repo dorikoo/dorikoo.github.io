@@ -97,7 +97,7 @@ $(document).ready(function(){
     });
     
     $('.return').click(function(){
-        alert("준비 중 입니다.");
+        alert("준비 중입니다.");
         return false;
     });
     

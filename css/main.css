@@ -253,7 +253,7 @@ ul{list-style:none;}
     #section04 .portfolio .site_box:nth-child(5){display: none;}
     #section04 .portfolio .site_img{height: 150px;}
     #section04 .portfolio .active .site_info{position: absolute; background-color: rgba(0,0,0,0.8);z-index: 1002; height: 100%;top: 0;}
-    #section04 .portfolio .site_title{font-size: 17px;text-align: center;padding-top: 55px;color: #fff;}
+    #section04 .portfolio .active .site_title{padding-top: 80px;}
 }
 
 /* ============================================================================ */
@@ -294,7 +294,7 @@ ul{list-style:none;}
     #section04 .portfolio .site_box:nth-child(5){display: none;}
     #section04 .portfolio .site_img{height: 150px;}
     #section04 .portfolio .active .site_info{position: absolute; background-color: rgba(0,0,0,0.8);z-index: 1002; height: 100%;top: 0;}
-    #section04 .portfolio .site_title{font-size: 17px;text-align: center;padding-top: 55px;color: #fff;}
+    #section04 .portfolio .active .site_title{font-size: 17px;text-align: center;padding-top: 55px;color: #fff;}
     
 }
 
