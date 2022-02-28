@@ -81,7 +81,7 @@ ul{list-style:none;}
 #section02 .wrap .intro::after{content:'';display:block;clear:both;}
 #section02 .wrap .intro .intro_left{float: left;}
 #section02 .wrap .intro .intro_left::after{content:'';display:block;clear:both;}
-#section02 .wrap .intro .intro_right{float: right;}
+#section02 .wrap .intro .intro_right{float: right;width: calc(100% - 490px);margin-top: 47px;}
 #section02 .wrap .intro .intro_right p{color: #434343;text-align: right;font-weight: 500;}
 #section02 .wrap .intro .intro_right p span{display: block; color: #434343;text-align: right;font-weight: 800;}
 
@@ -138,9 +138,9 @@ ul{list-style:none;}
 #section05 .wrap .contact p{font-size: 35px;font-weight: 800;line-height: 50px;text-align: center;}
 #section05 .wrap .contact span.contact_color{font-size: 35px;font-weight: 800;line-height: 50px;color:#ec6b6b;} 
 #section05 .wrap .contact span.me{font-size: 35px;font-weight: 800;line-height: 50px;color:#ec6b6b;} 
-#section05 .wrap .contact_link ul{width: 340px;margin: 30px auto 0;display: flex;justify-content: center;}
+#section05 .wrap .contact_link ul{width: 340px;margin: 30px auto 0;}
 #section05 .wrap .contact_link ul::after{content:'';display:block;clear:both;}
-#section05 .wrap .contact_link li{margin: 0 20px;}
+#section05 .wrap .contact_link li{float: left;margin-right: 20px;}
 #section05 .wrap .contact_link li:nth-child(3){margin-right: 0;}
 #section05 .wrap .contact_link li i{font-size: 100px;}
 #section05 .wrap .contact_link li:hover i{color: #ec6b6b}
