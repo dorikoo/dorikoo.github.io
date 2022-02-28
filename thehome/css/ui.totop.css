@@ -1,0 +1,40 @@
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:300px;
+	right: calc(50% - 680px);
+	overflow:hidden;
+	width:50px;
+	height:50px;
+	text-indent: -999em;
+    /* 요소에 텍스트컨텐츠가 있는데 보이지 않게 처리할 때 사용 */
+    /* 첫줄 들여쓰기를 -로 내어쓰기로 변경해서 요소 밖으로 뺌 */
+    /* text-align: right;인 경우는 999em으로 오른쪽으로 빼야 함 */
+    
+	background:url(../img/common/top_scroll_img.png) no-repeat left top;
+}
+
+/* hover이미지 사용 안함
+#toTopHover {
+	background:url(../img/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}*/
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

@@ -1,0 +1,20 @@
+.login_form{
+    width:400px; height:240px;
+    padding-left: 390px;
+}
+.login_form .id,.login_form .pw,.login_form .submit{
+    float: left;
+    width:400px;
+    height:60px;
+    margin-bottom: 10px;
+}
+.login_form .chk_box{
+    margin-bottom: 20px;
+}
+.login_form .submit{
+    background-color: #434343;
+    color: #fff;font-size: 20px; font-weight: 600;
+}
+.login_form input.id,.pw:placeholder-shown{
+    font-size: 14px;
+}

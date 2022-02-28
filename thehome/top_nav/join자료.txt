@@ -1,0 +1,71 @@
+<div class="name_box">
+                       <span class="text">이름</span>
+                        <input type="text" class="name" placeholder="아이디를 입력해주세요">
+                   </div>
+                    <div class="id_box">
+                        <span class="text">아이디</span>
+                        <input type="text" class="id" placeholder="아이디를 입력해주세요">
+                    </div>
+                    <div class="pw_box">
+                        <span class="text">비밀번호</span>
+                        <input type="password" class="pw" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                    <div class="pw_chk_box">
+                        <span class="text">비밀번호확인</span>
+                        <input type="password" class="pwchk" placeholder="비밀번호를 입력해주세요">
+                    </div>
+                        <span class="text">생년월일</span>
+                        
+                        <div class="year_box">
+                            <select id="yearselect" class="bth_box">
+                                <option>2019</option>
+                                <option>2018</option>
+                                <option>2017</option>
+                            </select>
+                            <label for="yearselect">년</label>
+                             <select id="monthselect" class="bth_box">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <label for="monthselect">월</label>
+                            <select id="dateselect" class="bth_box">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                            <label for="dateselect">일</label>
+                        </div>
+                        <span class="text">전화번호</span>
+                        
+                        <div class="phone_box">
+                            <select id="phonenum" class="num_box">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>
+                            <input type="text" class="num_box">
+                            <input type="text" class="num_box">
+                        </div>   
+                    <input type="checkbox" id="sns" class="sns_box">
+                    <label for="sns">sns 수신 동의 여부 ( 체크시 동의 )</label>
+                       
+                        <span class="email">이메일</span>
+                        <div class="email_box">
+                            <input type="text" class="email1">
+                            <span class="email2">@</span>
+                            <select id="email_select" class="email3">
+                                <option>직접입력</option>
+                                <option>naver.com</option>
+                                <option>nate.com</option>
+                                <option>hanmail.net</option>
+                                <option>gmail.com</option>
+                            </select>
+                        </div>
+                    <input type="checkbox" id="email" class="mail_box">
+                    <label for="email">이메일 수신 동의 여부 ( 체크시 동의 )</label>
+                    
+                    <input type="button" class="submit" value="회원가입">

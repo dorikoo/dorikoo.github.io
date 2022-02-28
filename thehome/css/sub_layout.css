@@ -1,0 +1,128 @@
+/* main_img */
+.main_img{
+    width: 100%; min-width: 1180px; height: 300px;
+}
+.main_wrap{
+    width: 100%; min-width: 1180px; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main_img01{ background-image: url(../img/sub/brand_bg.jpg);}
+.main_img02{ background-image: url(../img/sub/info_bg.jpg);}
+.main_img03{ background-image: url(../img/sub/review_bg.jpg);}
+.main_img04{ background-image: url(../img/sub/inquiry_bg.jpg);}
+.main_img05{ background-image: url(../img/sub/support_bg.jpg);}
+.main_img06{ background-image: url(../img/tnav/login_bg.jpg);}
+
+
+.main_wrap h2{
+    font-size: 45px; font-weight: bold; 
+    color: #fff; text-align: center;
+    padding-top: 85px; margin-bottom: 25px;
+}
+.main_wrap.main_img06 > h2{
+    font-size: 45px; font-weight: bold; 
+    color: #fff; text-align: center;
+    padding-top: 85px; margin-bottom: 15px;
+}
+.main_wrap p{
+    font-size: 18px; color: #fff;
+    text-align: center; font-weight: 500;
+}
+/* indicator */
+.indicator{
+    width: 100%; min-width: 1180px; height: 50px;
+    border: 1px solid #ccc;
+}
+.indicator .wrap{ position: relative; }
+.indicator .home{
+    float: left; width: 60px; height: 50px;
+    text-align: center; padding-top: 18px; box-sizing: border-box;
+}
+.indicator .home > img{ position: relative; top: -2px; }
+.indicator .indi_main, .indicator .indi_sub{
+    float: left; overflow: hidden;
+    position: absolute; z-index: 100;
+}
+.indicator .indi_main{ width: 160px; left: 60px; }
+.indicator .indi_sub{ width: 190px; left: 220px; }
+.indicator button{
+    display: block; /* 버튼요소가 인라인블록이어서 아래 공백발생 - 없애기 위해서 블록 요소로 변경 */
+    width: 100%; height: 50px;
+    border: none; background-color: transparent;
+    box-sizing: border-box;
+}
+.indicator .text{
+    float: left; margin-left: 20px;
+    height: 50px; line-height: 50px; font-size: 15px; font-weight: bold; color: #646464;
+}
+.indicator .icon{
+    float: right; margin-right: 15px;
+    height: 50px; padding-top: 15px; box-sizing: border-box;
+}
+.indicator ul{
+    width: 100%; overflow: hidden;
+    border-top: 1px solid #ccc;; 
+    border-left: 1px solid #ccc;border-right: 1px solid #ccc;
+    background-color: #fff; box-sizing: border-box;
+    display: none; 
+}
+.indicator li{
+    width: 100%; height: 45px; line-height: 45px;
+    padding-left: 20px; box-sizing: border-box; border-bottom: 1px solid #ccc;
+}
+.indicator li a{ font-size: 15px; font-weight: 600; color: #646464; }
+.indicator .active a{ color: #3b64a1; }
+.indicator li a:hover{ color: #3b64a1; }
+
+/* border_right */
+.border_right{ float: right; }
+.indi_main .border_right{ float: right; position: relative; top: -38px;}
+.indi_sub .border_right{ float: right; position: relative; top: -38px;}
+
+/* button active */
+.indicator .indi_main button.active .text{
+    color: #3b64a1;
+}
+.indicator .indi_sub button.active .text{
+    color: #3b64a1;
+}
+
+/* sub_title */
+.sub_title{
+    width: 100%; min-width: 1180px; height: 280px;
+    padding-top: 95px; box-sizing: border-box;
+    text-align: center;
+}
+.sub_title h3{ font-size: 30px; font-weight: bold; color: #434343; }
+.sub_title .main_title{ position: relative; }
+.sub_title .main_title:after{
+    content: ''; display: block;
+    width: 130px; height: 1px; 
+    background-color: #434343;
+    position: absolute; bottom: -10px; 
+    left: 0; right: 0; margin: 0 auto;
+}
+.sub_title .blue{ font-size: 18px; color: #3b64a1;; }
+.sub_title p{ font-size: 18px; color: #434343;line-height: 28px;letter-spacing: -0.5px;font-weight: 500; margin-top: 20px;}
+
+/* info  _  제품소개 */
+.sub_title p.info_sub_title{font-size: 20px; margin-top: 15px;font-weight: 500;}
+.sub_title p.review_sub_title{font-size: 18px; margin-top: 20px; font-weight: 500; }
+.sub_title p.faq_sub_title{font-size: 18px; margin-top: 20px; font-weight: 100; }
+.sub_title p.direction_sub_title{font-size: 18px; margin-top: 20px; font-weight: 100; }
+
+/* 로그인 & 로그아웃 */
+.sub_title .login{ font-size: 24px;}
+.sub_title .login:after{display: none;}
+.sub_title p.login{ margin-top:50px; font-size: 18px; font-weight: 600; padding-bottom: 30px;}
+
+
+/* contents */
+.contents{ 
+    width: 1180px; overflow: hidden; /* 서브페이지마다 높이가 다르기 때문에 높이지정X */
+    padding-bottom: 200px;
+    margin: 0 auto;
+}
+

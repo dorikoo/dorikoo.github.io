@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>DP</title>
+        <link rel="shortcut icon" href="img/common/favicon.gif">
+        <link rel="icon" href="img/common/favicon_android.png">
+        <link rel="apple-touch-icon-precomposed" href="img/common/favicon_ios.png">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <script src="js/jquery-1.12.0.min.js"></script>    
+        <script src="js/swiper.min.js"></script>    
+        <script src="js/main.js"></script>
+        <script src="js/slick.min.js"></script>
+    </head>
+    <body>
+        <header class="active">
+            <nav class="top_nav">
+                <ul>
+                    <li class="glass"><a href="#"></a></li>
+                    <li class="cart"><a href="#"></a></li>
+                </ul>
+            </nav>
+            <div class="main_nav">
+                <h1>
+                    <a href="index.html" title="바로가기">
+                    </a>
+                </h1>
+                <div class="panelBtn">
+                    <a href="#" title="메인메뉴보기">
+                        <span class="line01"></span>
+                        <span class="line02"></span>
+                        <span class="line03"></span>
+                    </a>
+                </div>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">노트북
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#">개인용</a></li>
+                                <li><a href="#">기업용</a></li>
+                                <li><a href="#">게임용</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">데스크탑
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#">개인용</a></li>
+                                <li><a href="#">기업용</a></li>
+                                <li><a href="#">게임용</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">프린터
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="long"><a href="#">가정&amp;홈오피스</a></li>
+                                <li class="long"><a href="#">복합기</a></li>
+                                <li class="long"><a href="#">디지털프레스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">디스플레이
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#">개인용</a></li>
+                                <li><a href="#">기업용</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">악세사리
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#">오디오</a></li>
+                                <li><a href="#">케이스</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="하위메뉴보기" class="main_menu">고객지원
+                                <span class="line01"></span>
+                                <span class="line02"></span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#" >공지사항</a></li>
+                                <li><a href="#" >FAQ</a></li>
+                                <li><a href="#" >매장찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sub_nav_Bg"></div>
+            <div class="mobile_Bg"></div>
+        </header>
+        <div class="popup">
+			<div class="pTop">
+			    <div class="popup_title">
+			        <img src="img/common/popup_logo_img.png" alt="팝업로고">
+			        <p class="logo">Dipo</p>
+			        <p class="content">개인 포트폴리오 홈페이지입니다.</p>
+			    </div>
+			    <div class="img_box">
+                    <img src="img/common/popup_tablet_img.png" alt="타블렛" class="tablet">
+                    <img src="img/common/popup_monitor.png" alt="모니터" class="monitor">
+                    <img src="img/common/popup_phone_img.png" alt="핸드폰" class="phone">
+			    </div>
+			</div>
+			<div class="pBottom">
+                <p>
+                    본 사이트는 상업적 목적이 아닌<br>
+                    개인 포트폴리오 용도로 만들어 졌습니다.<br>
+                    홈페이지의 일부 내용과 이미지 등은 출처가 있음을 밝힙니다.
+                </p>
+				<form action="#">
+					<fieldset>
+						<a href="#closetodaypop" class="today">오늘 하루 보지 않기</a>
+						<a href="#closepop" title="팝업창 닫기" class="close">[닫기]</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+        <div class="main_slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="slide01">
+                           <div class="wrap">
+                                <p class="main_title">
+                                    DP Elite Dragonfly
+                                </p>
+                                <p class="sub_title">
+                                    Lighter than air.
+                                </p>
+                                <img src="img/main/pc/main_slider_item01.png" alt="메인노트북1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                         <div class="slide02">
+                            <div class="wrap">
+                                <p class="main_title">
+                                    HP ENVY 13 x360
+                                </p>
+                                <p class="sub_title">
+                                    내가 원하던 스타일리쉬한 디자인.
+                                </p>
+                                <img src="img/main/pc/main_slider_item02.png" alt="메인노트북2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide03">
+                            <div class="wrap">
+                                <p class="main_title">
+                                    오멘 오벨리스크
+                                </p>
+                                <p class="sub_title">
+                                    Elegant and Powerful. Quick upgrade.
+                                </p>
+                                <img src="img/main/pc/main_slider_item03.png" alt="메인노트북3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+        <div class="daily_dp">
+            <div class="wrap">
+                <h2>일상속의 DP</h2>
+                <p class="big">
+                    DP는 아침에 일어나서 잠자리에 들 때까지 나의 Life안에 최적화 되어있는<br>
+                    나를 가장 잘 알고 이해하는 친구이자 가족, 비서와 같은 동반자입니다.
+                </p>
+                <p class="mobile">
+                    DP는 아침에 일어나서 잠자리에 들 때까지<br>
+                    나의 Life안에 최적화 되어있는 나를 가장 잘 알고<br>
+                    이해하는 친구이자 가족, 비서와 같은 동반자입니다.
+                </p>
+                <div class="icon">
+                    <img src="img/main/common/daily_dp_icon01.png" alt="노트북">
+                    <img src="img/main/common/daily_dp_icon02.png" alt="데스크탑">
+                    <img src="img/main/common/daily_dp_icon03.png" alt="프린터" >
+                    <img src="img/main/common/daily_dp_icon04.png" alt="악세사리">
+                </div>
+                <a href="#">
+                    구경하러가기
+                </a>
+            </div>
+        </div>
+        <div class="battery">
+            <div class="wrap">
+                <h2>지치지 않는 배터리</h2>
+                <p class="big">
+                    
+                    하루 종일 사용 가능한 배터리.<br>
+                    세계에서 가장 오래가는 배터리 수명을 가진 쿼드 코어 컨버터블 노트북.
+                </p>
+                <p class="mobile">
+                    
+                    하루 종일 사용 가능한 배터리.<br>
+                    세계에서 가장 오래가는 배터리 수명을 가진<br>
+                    쿼드 코어 컨버터블 노트북.
+                </p>
+                <div class="battery_animation">
+                    <div class="red_bar"></div>
+                </div>
+                <a href="#">
+                    HP Spectre x360 
+                </a>
+            </div>
+        </div>
+        <div class="dp_story">
+            <h2>DP 스토리</h2>
+            <div class="wrap">
+                <div class="pcol04 tcol04 mcol06 main_video">
+                    <iframe src="https://www.youtube.com/embed/UUyiRHgsgbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="right">
+                     <div class="sub_video01">
+                        <iframe src="https://www.youtube.com/embed/g88xm9oEKKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="sub_video02">
+                        <iframe src="https://www.youtube.com/embed/1BiPVQD0EoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dp_experience">
+            <div class="wrap">
+            <h2>DP를 경험해보세요</h2>
+            <p>DP의 다양한 제품을 만나 보실 수 있습니다.</p>
+                <div class="mobile_slider">
+                    <div>
+                        <a href="#" class="laptop">
+                            <h3>노트북</h3>
+                            <p>품격 속의 뛰어난 성능</p>
+                            <img src="img/main/common/dp_experience_laptop.png" alt="경험_노트북" class="hover_animation">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="desptop">
+                            <h3>데스크탑</h3>
+                            <p>한 단계 높은 성능과 생산성</p>
+                            <img src="img/main/common/dp_experience_desptop.png" alt="경험_데스크탑
+                            " class="hover_animation">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="display">
+                            <h3>디스플레이</h3>
+                            <p>눈길을 사로잡는 디자인</p>
+                            <img src="img/main/common/dp_experience_display.png" alt="경험_디스플레이" class="hover_animation">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="event_banner">
+            <div class="event1">
+                <a href="#">
+                    <div class="wrap">
+                        <p class="title">Comming New semester!</p>
+                        <p class="main_title">새학기 프로모션</p>
+                        <p class="pc_sub">혜택 1. 구매시 사은품 100%증정</p>
+                        <p class="pc_sub">혜택 2. 기분 좋은 럭키 이벤트!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="event2">
+                <a href="#">
+                    <div class="wrap">
+                        <p class="title">코로나19, 함께 이겨냅시다 !</p>
+                        <p class="main_title">#정부 행동예방수칙 보러가기</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="wrap">
+                <div class="f_logo">
+                    <h1>
+                        <a href="#">
+                            <img src="img/common/footer_logo_img.png" alt="푸터로고">
+                        </a>
+                    </h1>
+                </div>
+                <div class="f_content">
+                    <p class="pc">
+                        <span>(07325) 서울시 영등포구 의사당대로 83(여의도동)</span>통신판매업신고: 제2015-서울영등포-0972호<br>
+
+                        <span class="last">대표이사: 김대환 사업자등록번호: 741-81-00060</span>Tel: 080-703-0706 Email: dok96@naver.com<br>
+
+                        개인정보보호책임자: 김도연  02-000-0000 
+                    </p>
+                    <p class="tablet">
+                        (07325) 서울시 영등포구 의사당대로 83(여의도동)<br>
+                        통신판매업신고: 제2015-서울영등포-0972호<br>
+
+                        대표이사: 김대환 사업자등록번호: 741-81-00060<br>
+                        Tel: 080-703-0706 Email: dok96@naver.com<br><br>
+
+                        개인정보보호책임자: 김도연  02-000-0000 
+                    </p>
+                </div>
+                <div class="f_sns">
+                    <a href="#">
+                       <img src="img/common/footer_sns_facebook.png" alt="페이스북">
+                    </a>
+                    <a href="#">
+                       <img src="img/common/footer_sns_instagram.png" alt="인스타그램">
+                    </a>
+                    <a href="#">
+                       <img src="img/common/footer_sns_twitter.png" alt="트위터">
+                    </a>                    
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

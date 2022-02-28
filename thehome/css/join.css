@@ -1,0 +1,36 @@
+.join_form{
+    background-color: darkgoldenrod;
+    width:580px; height:690px;
+    margin-left: 300px;
+}
+.id,.pw,.pwchk,.name,.submit{
+    width:400px;
+    height:60px;
+    margin-bottom: 10px;
+}
+.join_form span{
+    display: inline-block;
+    background-color: aqua;
+    margin-bottom: 55px;
+}
+.join_form .text{
+    font-size: 17px;
+    margin-left: 30px;
+    margin-bottom: 55px;
+}
+.join_form label{
+    font-size: 17px;
+}
+.join_form input {
+    float: right;
+    margin-bottom: 10px;
+}
+.join_form .bth_box,.num_box{
+    width:100px;
+    height:60px;
+}
+.join_form .email1{ width:80px; height:60px; }
+.join_form .email3{ width:120px; height:60px; }
+.year_box,.phone_box,.email_box{
+    float: right;
+}

@@ -1,0 +1,67 @@
+/* web font - 나눔손글씨, 노토산스*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap&subset=korean');
+/*나눔 손글씨 */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+
+*{ padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif; color: #434343; font-size: 12px; } /* 여백없앰, 폰트설정 맞춤 */
+li{ list-style: none; } /* 기호나 번호 없앰 */
+a{ text-decoration: none; } /* 밑줄 없앰 */
+img{ border: none; } /* ie가 링크걸린 이미지 테두리를 자동생성 - 없앰 */
+address{ font-style: normal; } /* 글자기울임 없앰 */
+fieldset{ border: none; } /* 테두리 없앰 */
+legend{ position: absolute; left: -999em; } /* 폼구역설명 날림 */
+input[type=button], input[type=submit], input[type=reset], button{ cursor: pointer; } /* 버튼들에 마우스손모양 표시 */
+label.away{ position: absolute; left: -999em; } /* 라벨 화면 밖으로 날림 */
+table{ border-spacing: 0; border-collapse: collapse; } /* 셀간의 여백 없앰, 선겹침 허용 */
+
+.sitemap{
+    width:900px;
+    height:400px;
+    background-image: url(../img/sitemap/simtmap-bg.jpg);
+    background-repeat: no-repeat;
+}
+.sitemap h2{
+    width:100%;
+    text-align: center;
+    font-size: 24px;
+    padding:50px 0 40px; 
+    box-sizing: border-box;
+    color:#3b64a1;
+}
+.sitemap ul{
+    width:100%;
+}
+.sitemap ul>li{
+    width:90px;
+    float: left;
+    text-align: center;
+    margin-right: 70px;
+}
+.sitemap ul > .menu01{
+    margin-left: 75px;
+}
+.sitemap ul > li > h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #434343;
+}
+.sitemap ul > li > h3 a{
+    
+    font-size: 20px;
+}
+.sitemap .sub_menu li{
+    font-weight: 600;
+    line-height: 36px;
+}
+.sitemap .sub_menu li a{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+/* 메뉴 하버시 */
+.sitemap .sub_menu li a:hover {
+    color: #3b64a1;
+}
+.sitemap ul li:hover h3 a{
+    color: #3b64a1;
+}
