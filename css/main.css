@@ -141,7 +141,7 @@ ul{list-style:none;}
 #section05 .wrap .contact_link ul{width: max-content;margin: 30px auto 0;}
 #section05 .wrap .contact_link ul::after{content:'';display:block;clear:both;}
 #section05 .wrap .contact_link li{float: left;margin-right: 20px;}
-#section05 .wrap .contact_link li:nth-child(3){margin-right: 0;}
+#section05 .wrap .contact_link li:nth-child(2){margin-right: 0;}
 #section05 .wrap .contact_link li i{font-size: 100px;}
 #section05 .wrap .contact_link li:hover i{color: #ec6b6b}
 
